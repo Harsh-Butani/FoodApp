@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reset Password</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link  href="css/style.css"> -->
+</head>
+
+<body>
+  <div class="signup">
+    <img class="top-img" src="top-image.png">
+    <!-- <a href="/login"><img class="down-arrow" src="/down-arrow(5).png"></a> -->
+    <p class="heading">Reset Password</p>
+    <form action="/reset" method="POST">
+      <div class="container">
+        <input type="email" placeholder="Email ID" name="email" required>
+        <input type="password" placeholder="New Password" name="password" required>
+        <input type="password" placeholder="Re-type New Password" name="repassword" required>
+        <button type="submit">Confirm</button>
+      </div>
+    </form>
+    <img class="bottom-img" src="bottom-image.png">
+  </div>
+</body>
+
+</html>

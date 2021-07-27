@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign In</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="signup">
+    <img class="top-img" src="top-image.png">
+    <a href="/"><img class="down-arrow" src="down-arrow.png"></a>
+    <p class="heading">Sign In</p>
+    <form action="/login" method="POST">
+      <div class="container">
+        <input type="email" placeholder="Email ID" name="email" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <button type="submit">Sign In</button>
+      </div>
+    </form>
+    <a class="forgot-pass" href="/forgot">Forgot Password?</a>
+    <div class="line"></div>
+    <span>Or connect with</span>
+    <img class="bottom-img" src="bottom-image.png">
+    <a href="/auth/google"><img class="google-img" src="google.png"></a>
+    <img class="fb-img" src="facebook.png">
+  </div>
+</body>
+
+</html>

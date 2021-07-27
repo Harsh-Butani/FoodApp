@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <title>Add item</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="signup">
+    <img class="top-img" src="top-image.png">
+    <p class="heading">Menu</p>
+    <form action="/viewcart" method="POST">
+      <div class="container">
+        <input type="text" placeholder="Hotel ID" name="hotel_id" required>
+        <input type="text" placeholder="User ID" name="user_id" required>
+        <input type="text" placeholder="Item 1 ID" name="item1_id">
+        <input type="number" placeholder="Item 1 Quantity" name="item1_quantity">
+        <input type="text" placeholder="Item 2 ID" name="item2_id">
+        <input type="number" placeholder="Item 2 Quantity" name="item2_quantity">
+        <input type="text" placeholder="Item 3 ID" name="item3_id">
+        <input type="number" placeholder="Item 3 Quantity" name="item3_quantity">
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Submit</button>
+        </div>
+      </div>
+    </form>
+    <a href="/cart">
+      <img class="take-away2" src="take-away.png">
+    </a>
+
+    <img class="user" src="user.png">
+
+    <a href="/ownerapp">
+      <img class="dots" src="dots.png">
+    </a>
+
+    <a href="/index">
+      <img class="chef" src="chef.png">
+    </a>
+
+  </div>
+
+</body>
+
+</html>

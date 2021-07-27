@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="signup">
+    <img class="menu-background" src="menu-background.png">
+    <a href="/index">
+      <div class="button-container">
+        <img class="multimedia-option" src="multimedia-option.png">
+      </div>
+    </a>
+    <div class="glass-container">
+      <img class="magnifying-glass" src="magnifying-glass.png">
+    </div>
+    <div class="sharmas-container">
+
+    </div>
+    <p class="sharmas-text">Sharmas</p>
+    <p class="type-food">Mexican, Indian, Italian</p>
+    <img class="menu" src="menu.png">
+    <p class="menu-image">Menu Image</p>
+    <hr class="green-line">
+    <p class="time">11am - 10pm</p>
+    <p class="open-text">Open</p>
+    <img class="telephone" src="telephone.png">
+    <p class="phone-no">0123456789</p>
+    <img class="target-audience" src="target-audience.png">
+    <p class="customers">125+ customers ordered</p>
+    <p class="veg">Veg Only</p>
+    <img class="toggle" src="toggle.png">
+    <div class="bu1">
+      <img class="online-certificate" src="online-certificate.png">
+    </div>
+    <div class="bu2">
+      <img class="fries" src="fries.png">
+    </div>
+    <div class="bu3">
+      <img class="online-certificate" src="dessert.png">
+    </div>
+    <div class="bu4">
+      <img class="online-certificate" src="soup.png">
+    </div>
+    <div class="bu5">
+      <img class="online-certificate" src="rice-img.png">
+    </div>
+    <p class="best-seller">Best-Seller</p>
+    <p class="snacks">Snacks</p>
+    <p class="cake">Dessert</p>
+    <p class="soup-txt">Soup</p>
+    <p class="rice-txt">Rice</p>
+    <div class="box1">
+      <img class="flames" src="flame.png">
+      <img class="dish11" src="dish11.png">
+      <p class="cost1">60 &#8377;</p>
+      <p class="text11">Chicken soup</p>
+      <div class="minus22 m1">
+        <p>-</p>
+      </div>
+      <div class="mid22 mid1">
+        <p>0</p>
+      </div>
+      <div class="plus22 p1">
+        <p>+</p>
+      </div>
+    </div>
+    <div class="box2">
+      <img class="leaves" src="leaf.png">
+      <img class="dish11" src="dish22.png">
+      <p class="cost1">45 &#8377;</p>
+      <p class="text11">Rice Idli</p>
+      <div class="minus22 m2">
+        <p>-</p>
+      </div>
+      <div class="mid22 mid2">
+        <p>0</p>
+      </div>
+      <div class="plus22 p2">
+        <p>+</p>
+      </div>
+    </div>
+    <div class="box2">
+      <img class="leaves" src="leaf.png">
+      <img class="dish11" src="paneer.png">
+      <p class="cost1">120 &#8377;</p>
+      <p class="text11">Palak Paneer</p>
+      <div class="minus22 m3">
+        <p>-</p>
+      </div>
+      <div class="mid22 mid3">
+        <p>0</p>
+      </div>
+      <div class="plus22 p3">
+        <p>+</p>
+      </div>
+    </div>
+    <div class="box2">
+      <img class="flames" src="flame.png">
+      <img class="dish11" src="dish33.png">
+      <p class="cost1">60 &#8377;</p>
+      <p class="text11">Chicken roll</p>
+      <div class="minus22 m4">
+        <p>-</p>
+      </div>
+      <div class="mid22 mid4">
+        <p>0</p>
+      </div>
+      <div class="plus22 p4">
+        <p>+</p>
+      </div>
+    </div>
+    <div class="box2">
+      <img class="flames" src="flame.png">
+      <img class="dish11" src="dish33.png">
+      <p class="cost1">60 &#8377;</p>
+      <p class="text11">Chicken noodles</p>
+      <div class="minus22 m5">
+        <p>-</p>
+      </div>
+      <div class="mid22 mid5">
+        <p>0</p>
+      </div>
+      <div class="plus22 p5">
+        <p>+</p>
+      </div>
+    </div>
+    <button class="b11" type="submit">Add to cart</button>
+  </div>
+  <script>
+    document.querySelector(".p1").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid1").textContent);
+      document.querySelector(".mid1").textContent = quantity + 1;
+    });
+
+    document.querySelector(".m1").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid1").textContent);
+      if (quantity > 0) {
+        document.querySelector(".mid1").textContent = quantity - 1;
+      }
+    });
+
+    document.querySelector(".p2").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid2").textContent);
+      document.querySelector(".mid2").textContent = quantity + 1;
+    });
+
+    document.querySelector(".m2").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid2").textContent);
+      if (quantity > 0) {
+        document.querySelector(".mid2").textContent = quantity - 1;
+      }
+    });
+
+    document.querySelector(".p3").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid3").textContent);
+      document.querySelector(".mid3").textContent = quantity + 1;
+    });
+
+    document.querySelector(".m3").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid3").textContent);
+      if (quantity > 0) {
+        document.querySelector(".mid3").textContent = quantity - 1;
+      }
+    });
+
+    document.querySelector(".p4").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid4").textContent);
+      document.querySelector(".mid4").textContent = quantity + 1;
+    });
+
+    document.querySelector(".m4").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid4").textContent);
+      if (quantity > 0) {
+        document.querySelector(".mid4").textContent = quantity - 1;
+      }
+    });
+
+    document.querySelector(".p5").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid5").textContent);
+      document.querySelector(".mid5").textContent = quantity + 1;
+    });
+
+    document.querySelector(".m5").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid5").textContent);
+      if (quantity > 0) {
+        document.querySelector(".mid5").textContent = quantity - 1;
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="signup">
+    <img class="top-img" src="top-image.png">
+    <div class="logo"></div>
+    <a href="/owner">
+      <img class="french" src="french.png">
+    </a>
+    <p class="cart">Your Cart</p>
+    <div class="item">
+      <img class="leaves" src="leaf.png">
+      <img class="dish" src="dish.png">
+      <p class="rice">Rice Idli</p>
+      <div class="minus m1">
+        <p>-</p>
+      </div>
+      <p class="mid mid1">2</p>
+      <div class="plus p1">
+        <p>+</p>
+      </div>
+      <p class="rupee">&#8377; 90</p>
+    </div>
+    <div class="item2">
+      <img class="leaves" src="leaf.png">
+      <img class="dish" src="dish.png">
+      <p class="rice">Rice Idli</p>
+      <div class="minus m2">
+        <p>-</p>
+      </div>
+      <p class="mid mid2">2</p>
+      <div class="plus p2">
+        <p>+</p>
+      </div>
+      <p class="rupee">&#8377; 90</p>
+    </div>
+    <div class="item2">
+      <img class="leaves" src="leaf.png">
+      <img class="dish" src="dish.png">
+      <p class="rice">Rice Idli</p>
+      <div class="minus m3">
+        <p>-</p>
+      </div>
+      <p class="mid mid3">2</p>
+      <div class="plus p3">
+        <p>+</p>
+      </div>
+      <p class="rupee">&#8377; 90</p>
+    </div>
+    <div class="item2">
+      <img class="leaves" src="leaf.png">
+      <img class="dish" src="dish.png">
+      <p class="rice">Rice Idli</p>
+      <div class="minus m4">
+        <p>-</p>
+      </div>
+      <p class="mid mid4">2</p>
+      <div class="plus p4">
+        <p>+</p>
+      </div>
+      <p class="rupee">&#8377; 90</p>
+    </div>
+    <p class="total">Total Amount</p>
+    <p class="number">&#8377;780</p>
+    <button class="b3" type="submit">Checkout</button>
+    <img class="add-items-icon" src="add-items-icon.png">
+    <div class="bottom-container">
+    </div>
+    <p class="bottom-cart">Cart</p>
+    <img class="take-away2" src="take-away2.png">
+    <a href="/menuform">
+      <img class="user" src="user.png">
+    </a>
+    <a href="/ownerapp">
+      <img class="dots" src="dots.png">
+    </a>
+    <a href="/index">
+      <img class="chef" src="chef.png">
+    </a>
+  </div>
+  <script>
+    document.querySelector(".p1").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid1").textContent);
+      document.querySelector(".mid1").textContent = quantity + 1;
+    });
+
+    document.querySelector(".m1").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid1").textContent);
+      if (quantity > 0) {
+        document.querySelector(".mid1").textContent = quantity - 1;
+      }
+    });
+
+    document.querySelector(".p2").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid2").textContent);
+      document.querySelector(".mid2").textContent = quantity + 1;
+    });
+
+    document.querySelector(".m2").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid2").textContent);
+      if (quantity > 0) {
+        document.querySelector(".mid2").textContent = quantity - 1;
+      }
+    });
+
+    document.querySelector(".p3").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid3").textContent);
+      document.querySelector(".mid3").textContent = quantity + 1;
+    });
+
+    document.querySelector(".m3").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid3").textContent);
+      if (quantity > 0) {
+        document.querySelector(".mid3").textContent = quantity - 1;
+      }
+    });
+
+    document.querySelector(".p4").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid4").textContent);
+      document.querySelector(".mid4").textContent = quantity + 1;
+    });
+
+    document.querySelector(".m4").addEventListener("click", function(event) {
+      let quantity = Number(document.querySelector(".mid4").textContent);
+      if (quantity > 0) {
+        document.querySelector(".mid4").textContent = quantity - 1;
+      }
+    });
+  </script>
+</body>
+
+</html>

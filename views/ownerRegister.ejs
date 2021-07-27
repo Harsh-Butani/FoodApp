@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <title>Register Yourself</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="signup">
+    <img class="top-img" src="top-image.png">
+    <a href="/owner"><img class="down-arrow" src="down-arrow(5).png"></a>
+    <p class="heading">Owner Register</p>
+    <form action="/ownerRegister" method="POST">
+      <div class="container">
+        <input type="text" placeholder="Ownername" name="ownername" required>
+        <input type="text" placeholder="Mobile Number" name="phone" required>
+        <input type="text" placeholder="ALternate Mobile Number" name="altphone" required>
+        <input type="text" placeholder="Residence Address" name="address" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Register</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
